@@ -1,0 +1,65 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity top_level is
+  -- Total de bits das entradas e saidas
+  generic ( larguraEnderecos : natural := 3
+  );
+  port   (
+	 escrita_reg_3: in std_logic; 
+	 operacao: in std_logic;
+	 KEY		 : in  std_logic_vector(3 downto 0);
+	 instrucao: out std_logic_vector(5 downto 0);
+	 saida_visu_ULA: out std_logic_vector(31 downto 0);
+	 endereco_in_rom: out std_logic_vector(31 downto 0);
+	 dado_out_rom: out std_logic_vector(31 downto 0)
+);
+end entity;
+
+
+architecture arquitetura of top_level is
+
+---------------------------------------------------------
+  signal CLK    : std_logic;
+  signal proxPC : std_logic_vector (31 downto 0);
+  signal Endereco : std_logic_vector (31 downto 0);
+  signal saida_ROM : std_logic_vector (31 downto 0);
+  signal saida_ULA : std_logic_vector (31 downto 0);
+  signal entradaA_ULA : std_logic_vector (31 downto 0);
+  signal entradaB_ULA : std_logic_vector (31 downto 0);
+
+begin
+
+-- Instanciando os componentes:
+
+-- Para simular, fica mais simples tirar o edgeDetector, COLOCAR NO ARQUIVO PRINCIPAL
+-- gravar:  if simulacao generate
+CLK <= KEY(0);
+-- else generate
+-- detectorSub0: work.edgeDetector(bordaSubida)
+--        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+-- end generate;
+
+-- O port map completo do Program Counter.
+PC : entity work.registradorGenerico   generic map (larguraDados => 32)
+          port map (DIN => proxPC, DOUT => Endereco, ENABLE => '1', CLK => CLK, RST => '0');
+
+incrementaPC :  entity work.somaConstante  generic map (larguraDados => 32, constante => 4)
+        port map( entrada => Endereco, saida => proxPC);
+		 
+ROM :  entity work.ROMMIPS
+        port map( Endereco => Endereco, Dado => saida_ROM);
+
+banco :  entity work.bancoReg  generic map (larguraDados => 32, larguraEndBancoRegs => 5)
+        port map( clk => CLK, enderecoA => saida_ROM(25 downto 21), enderecoB => saida_ROM(20 downto 16), 
+		  enderecoC => saida_ROM(15 downto 11), dadoEscritaC => saida_ULA, escreveC => escrita_reg_3,
+		  saidaA => entradaA_ULA , saidaB => entradaB_ULA);
+		  
+ULA : entity work.ULASomaSub  generic map(larguraDados => 32)
+          port map (entradaA => entradaA_ULA, entradaB => entradaB_ULA, saida => saida_ULA, seletor => operacao);
+		
+saida_visu_ULA <= saida_ULA;
+endereco_in_rom <= Endereco;
+dado_out_rom <= saida_ROM;
+
+end architecture;
