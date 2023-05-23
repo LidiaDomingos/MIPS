@@ -6,7 +6,6 @@ entity top_level is
   generic ( larguraEnderecos : natural := 3
   );
   port   (
-	 CLOCK_50 : in std_logic;
 	 KEY      : in std_logic_vector(3 downto 0);
 	 SW       : in std_logic_vector(9 downto 0);
 	 LEDR     : out std_logic_vector (9 downto 0);
@@ -54,8 +53,6 @@ begin
 
 CLK <= KEY(0);
 
---detectorSub0: work.edgeDetector(bordaSubida)
---     port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
 
 -- O port map completo do Program Counter.
 

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/lidia/6 SEM/mips_intermediario/MIPS/output_files/") File("mips_A.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("/home/lorran/Documentos/MIPS/output_files/") File("mips_A.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -22,7 +22,7 @@ architecture comportamento of UnidadeControleULA is
   constant BEQ    : std_logic_vector(1 downto 0) := "11";
     
   begin
-         -- inverteB  
+         -- "inverteB  | bit 1 mux sel | bit 0 mux sel" 
 ULActrl <= "000" when (funct = OP_AND and ULAop = R) else
            "001" when (funct = OP_OR  and ULAop = R) else
 			  "010" when (funct = SOMA   and ULAop = R) else
@@ -30,5 +30,6 @@ ULActrl <= "000" when (funct = OP_AND and ULAop = R) else
 		     "111" when (funct = SLT    and ULAop = R) else
 		     "010" when (ULAop = LW)    else
 			  "010" when (ULAop = SW)    else
-			  "110" when (ULAop = BEQ);  
+			  "110" when (ULAop = BEQ)	  else
+		     "000";   
 end architecture;

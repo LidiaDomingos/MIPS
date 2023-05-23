@@ -369,7 +369,7 @@ TDO                          : M5        : output :                   :         
 KEY[3]                       : M6        : input  : 3.3-V LVTTL       :         : 3A        : Y              
 KEY[2]                       : M7        : input  : 3.3-V LVTTL       :         : 3A        : Y              
 HEX5[1]                      : M8        : output : 3.3-V LVTTL       :         : 3B        : Y              
-CLOCK_50                     : M9        : input  : 3.3-V LVTTL       :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M9        :        :                   :         : 3B        :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCC                          : M11       : power  :                   : 1.1V    :           :                
 GND                          : M12       : gnd    :                   :         :           :                

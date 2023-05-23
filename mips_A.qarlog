@@ -1,0 +1,33 @@
+Quartus Prime Archive log --	/home/lorran/Documentos/MIPS/mips_A.qarlog
+
+Archive:	/home/lorran/Documentos/MIPS/mips_A.qar
+Date:		Tue May 23 18:03:04 2023
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/lorran/Documentos/MIPS/RAMMIPS.vhd
+/home/lorran/Documentos/MIPS/ROMMIPS.vhd
+/home/lorran/Documentos/MIPS/ROMcontent.mif
+/home/lorran/Documentos/MIPS/Somador_1bit.vhd
+/home/lorran/Documentos/MIPS/ULA_1bit.vhd
+/home/lorran/Documentos/MIPS/ULA_32bit.vhd
+/home/lorran/Documentos/MIPS/UnidadeControleFluxoDados.vhd
+/home/lorran/Documentos/MIPS/UnidadeControleULA.vhd
+/home/lorran/Documentos/MIPS/bancoReg.vhd
+/home/lorran/Documentos/MIPS/conversorHex7Seg.vhd
+/home/lorran/Documentos/MIPS/edgeDetector.vhd
+/home/lorran/Documentos/MIPS/estendeSinalGenerico.vhd
+/home/lorran/Documentos/MIPS/mips_A.qpf
+/home/lorran/Documentos/MIPS/mips_A.qsf
+/home/lorran/Documentos/MIPS/muxGenerico2x1.vhd
+/home/lorran/Documentos/MIPS/muxGenerico2x1_32bit.vhd
+/home/lorran/Documentos/MIPS/muxGenerico4x1.vhd
+/home/lorran/Documentos/MIPS/registradorGenerico.vhd
+/home/lorran/Documentos/MIPS/somaConstante.vhd
+/home/lorran/Documentos/MIPS/somadorGenerico.vhd
+/home/lorran/Documentos/MIPS/top_level.vhd
+/home/lorran/intelFPGA_lite/20.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 22 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

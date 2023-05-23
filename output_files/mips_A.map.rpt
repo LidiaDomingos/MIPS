@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips_A
-Tue May 23 10:56:48 2023
+Tue May 23 17:55:09 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,69 +13,68 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: Top-level Entity: |top_level
- 14. Parameter Settings for User Entity Instance: registradorGenerico:PC
- 15. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
- 16. Parameter Settings for User Entity Instance: ROMMIPS:ROM
- 17. Parameter Settings for User Entity Instance: RAMMIPS:RAM
- 18. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:muxRT_RD
- 19. Parameter Settings for User Entity Instance: bancoReg:banco
- 20. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:muxULA_mem
- 21. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:muxULA_entrada
- 22. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:mux_right
- 23. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:mux_left
- 24. Parameter Settings for User Entity Instance: estendeSinalGenerico:estendeSinal
- 25. Parameter Settings for User Entity Instance: somadorGenerico:somador
- 26. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:mux_top
- 27. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX5"
- 28. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX4"
- 29. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX3"
- 30. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX2"
- 31. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX1"
- 32. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX0"
- 33. Port Connectivity Checks: "somadorGenerico:somador"
- 34. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit31"
- 35. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit30"
- 36. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit29"
- 37. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit28"
- 38. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit27"
- 39. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit26"
- 40. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit25"
- 41. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit24"
- 42. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit23"
- 43. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit22"
- 44. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit21"
- 45. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit20"
- 46. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit19"
- 47. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit18"
- 48. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit17"
- 49. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit16"
- 50. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit15"
- 51. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit14"
- 52. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit13"
- 53. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit12"
- 54. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit11"
- 55. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit10"
- 56. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit9"
- 57. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit8"
- 58. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit7"
- 59. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit6"
- 60. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit5"
- 61. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit4"
- 62. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit3"
- 63. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit2"
- 64. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit1"
- 65. Port Connectivity Checks: "muxGenerico2x1_32bit:mux_left"
- 66. Port Connectivity Checks: "RAMMIPS:RAM"
- 67. Port Connectivity Checks: "registradorGenerico:PC"
- 68. Post-Synthesis Netlist Statistics for Top Partition
- 69. Elapsed Time Per Partition
- 70. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |top_level
+ 13. Parameter Settings for User Entity Instance: registradorGenerico:PC
+ 14. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
+ 15. Parameter Settings for User Entity Instance: ROMMIPS:ROM
+ 16. Parameter Settings for User Entity Instance: RAMMIPS:RAM
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:muxRT_RD
+ 18. Parameter Settings for User Entity Instance: bancoReg:banco
+ 19. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:muxULA_mem
+ 20. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:muxULA_entrada
+ 21. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:mux_right
+ 22. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:mux_left
+ 23. Parameter Settings for User Entity Instance: estendeSinalGenerico:estendeSinal
+ 24. Parameter Settings for User Entity Instance: somadorGenerico:somador
+ 25. Parameter Settings for User Entity Instance: muxGenerico2x1_32bit:mux_top
+ 26. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX5"
+ 27. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX4"
+ 28. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX3"
+ 29. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX2"
+ 30. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX1"
+ 31. Port Connectivity Checks: "conversorHex7Seg:Decoder_HEX0"
+ 32. Port Connectivity Checks: "somadorGenerico:somador"
+ 33. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit31"
+ 34. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit30"
+ 35. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit29"
+ 36. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit28"
+ 37. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit27"
+ 38. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit26"
+ 39. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit25"
+ 40. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit24"
+ 41. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit23"
+ 42. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit22"
+ 43. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit21"
+ 44. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit20"
+ 45. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit19"
+ 46. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit18"
+ 47. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit17"
+ 48. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit16"
+ 49. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit15"
+ 50. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit14"
+ 51. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit13"
+ 52. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit12"
+ 53. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit11"
+ 54. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit10"
+ 55. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit9"
+ 56. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit8"
+ 57. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit7"
+ 58. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit6"
+ 59. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit5"
+ 60. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit4"
+ 61. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit3"
+ 62. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit2"
+ 63. Port Connectivity Checks: "ULA_32bit:ULA|ULA_1bit:Bit1"
+ 64. Port Connectivity Checks: "muxGenerico2x1_32bit:mux_left"
+ 65. Port Connectivity Checks: "RAMMIPS:RAM"
+ 66. Port Connectivity Checks: "registradorGenerico:PC"
+ 67. Post-Synthesis Netlist Statistics for Top Partition
+ 68. Elapsed Time Per Partition
+ 69. Analysis & Synthesis Messages
 
 
 
@@ -102,14 +101,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 23 10:56:48 2023       ;
+; Analysis & Synthesis Status     ; Successful - Tue May 23 17:55:09 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; mips_A                                      ;
 ; Top-level Entity Name           ; top_level                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 2142                                        ;
-; Total pins                      ; 67                                          ;
+; Total pins                      ; 66                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -130,6 +129,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
 ; Top-level entity name                                                           ; top_level          ; mips_A             ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation                             ; All                ;                    ;
 ; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
 ; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -229,29 +229,29 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/conversorHex7Seg.vhd          ;         ;
-; ULA_32bit.vhd                    ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_32bit.vhd                 ;         ;
-; ULA_1bit.vhd                     ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_1bit.vhd                  ;         ;
-; top_level.vhd                    ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd                 ;         ;
-; Somador_1bit.vhd                 ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/Somador_1bit.vhd              ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/somaConstante.vhd             ;         ;
-; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ROMMIPS.vhd                   ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/registradorGenerico.vhd       ;         ;
-; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico4x1.vhd            ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico2x1.vhd            ;         ;
-; bancoReg.vhd                     ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/bancoReg.vhd                  ;         ;
-; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd                   ;         ;
-; UnidadeControleFluxoDados.vhd    ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleFluxoDados.vhd ;         ;
-; UnidadeControleULA.vhd           ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleULA.vhd        ;         ;
-; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/estendeSinalGenerico.vhd      ;         ;
-; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/somadorGenerico.vhd           ;         ;
-; muxGenerico2x1_32bit.vhd         ; yes             ; User VHDL File  ; C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico2x1_32bit.vhd      ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/conversorHex7Seg.vhd          ;         ;
+; ULA_32bit.vhd                    ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/ULA_32bit.vhd                 ;         ;
+; ULA_1bit.vhd                     ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/ULA_1bit.vhd                  ;         ;
+; top_level.vhd                    ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/top_level.vhd                 ;         ;
+; Somador_1bit.vhd                 ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/Somador_1bit.vhd              ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/somaConstante.vhd             ;         ;
+; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/ROMMIPS.vhd                   ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/registradorGenerico.vhd       ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/muxGenerico4x1.vhd            ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/muxGenerico2x1.vhd            ;         ;
+; bancoReg.vhd                     ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/bancoReg.vhd                  ;         ;
+; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/RAMMIPS.vhd                   ;         ;
+; UnidadeControleFluxoDados.vhd    ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/UnidadeControleFluxoDados.vhd ;         ;
+; UnidadeControleULA.vhd           ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/UnidadeControleULA.vhd        ;         ;
+; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/estendeSinalGenerico.vhd      ;         ;
+; somadorGenerico.vhd              ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/somadorGenerico.vhd           ;         ;
+; muxGenerico2x1_32bit.vhd         ; yes             ; User VHDL File  ; /home/lorran/Documentos/MIPS/muxGenerico2x1_32bit.vhd      ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -259,25 +259,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 1578         ;
+; Estimate of Logic utilization (ALMs needed) ; 1570         ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 1320         ;
-;     -- 7 input functions                    ; 4            ;
-;     -- 6 input functions                    ; 840          ;
-;     -- 5 input functions                    ; 93           ;
-;     -- 4 input functions                    ; 164          ;
-;     -- <=3 input functions                  ; 219          ;
+; Combinational ALUT usage for logic          ; 1318         ;
+;     -- 7 input functions                    ; 10           ;
+;     -- 6 input functions                    ; 852          ;
+;     -- 5 input functions                    ; 43           ;
+;     -- 4 input functions                    ; 147          ;
+;     -- <=3 input functions                  ; 266          ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 2142         ;
 ;                                             ;              ;
-; I/O pins                                    ; 67           ;
+; I/O pins                                    ; 66           ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
 ; Maximum fan-out                             ; 2142         ;
-; Total fan-out                               ; 13212        ;
-; Average fan-out                             ; 3.67         ;
+; Total fan-out                               ; 13149        ;
+; Average fan-out                             ; 3.66         ;
 +---------------------------------------------+--------------+
 
 
@@ -286,14 +286,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Entity Name               ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+---------------------------+--------------+
-; |top_level                            ; 1320 (11)           ; 2142 (0)                  ; 0                 ; 0          ; 67   ; 0            ; |top_level                                                         ; top_level                 ; work         ;
-;    |RAMMIPS:RAM|                      ; 797 (797)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |top_level|RAMMIPS:RAM                                             ; RAMMIPS                   ; work         ;
-;    |ROMMIPS:ROM|                      ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ROMMIPS:ROM                                             ; ROMMIPS                   ; work         ;
-;    |ULA_32bit:ULA|                    ; 153 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA                                           ; ULA_32bit                 ; work         ;
-;       |ULA_1bit:Bit0|                 ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit0                             ; ULA_1bit                  ; work         ;
+; |top_level                            ; 1318 (10)           ; 2142 (0)                  ; 0                 ; 0          ; 66   ; 0            ; |top_level                                                         ; top_level                 ; work         ;
+;    |RAMMIPS:RAM|                      ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |top_level|RAMMIPS:RAM                                             ; RAMMIPS                   ; work         ;
+;    |ROMMIPS:ROM|                      ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ROMMIPS:ROM                                             ; ROMMIPS                   ; work         ;
+;    |ULA_32bit:ULA|                    ; 159 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA                                           ; ULA_32bit                 ; work         ;
+;       |ULA_1bit:Bit0|                 ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit0                             ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit0|Somador_1bit:Somador1bit    ; Somador_1bit              ; work         ;
-;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit0|muxGenerico2x1:muxInverteB  ; muxGenerico2x1            ; work         ;
-;          |muxGenerico4x1:MUX_ULA|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit0|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit0|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1            ; work         ;
 ;       |ULA_1bit:Bit10|                ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit10                            ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit10|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit10|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
@@ -308,8 +307,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit12|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
 ;       |ULA_1bit:Bit13|                ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit13                            ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit13|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
-;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit13|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
-;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit13|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit13|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
 ;       |ULA_1bit:Bit14|                ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit14                            ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit14|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit14|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
@@ -341,10 +339,10 @@ https://fpgasoftware.intel.com/eula.
 ;          |Somador_1bit:Somador1bit|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit20|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit20|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
 ;          |muxGenerico4x1:MUX_ULA|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit20|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
-;       |ULA_1bit:Bit21|                ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit21                            ; ULA_1bit                  ; work         ;
+;       |ULA_1bit:Bit21|                ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit21                            ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit21|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit21|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
-;          |muxGenerico4x1:MUX_ULA|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit21|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit21|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
 ;       |ULA_1bit:Bit22|                ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit22                            ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit22|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit22|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
@@ -353,10 +351,10 @@ https://fpgasoftware.intel.com/eula.
 ;          |Somador_1bit:Somador1bit|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit23|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit23|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
 ;          |muxGenerico4x1:MUX_ULA|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit23|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
-;       |ULA_1bit:Bit24|                ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit24                            ; ULA_1bit                  ; work         ;
+;       |ULA_1bit:Bit24|                ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit24                            ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit24|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit24|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
-;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit24|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit24|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
 ;       |ULA_1bit:Bit25|                ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit25                            ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit25|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit25|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
@@ -384,13 +382,14 @@ https://fpgasoftware.intel.com/eula.
 ;          |Somador_1bit:Somador1bit|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit30|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit30|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
 ;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit30|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
-;       |ULA_1bit:Bit31|                ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit31                            ; ULA_1bit                  ; work         ;
+;       |ULA_1bit:Bit31|                ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit31                            ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit31|Somador_1bit:Somador1bit   ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit31|muxGenerico2x1:muxInverteB ; muxGenerico2x1            ; work         ;
-;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit31|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit31|muxGenerico4x1:MUX_ULA     ; muxGenerico4x1            ; work         ;
 ;       |ULA_1bit:Bit3|                 ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit3                             ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit3|Somador_1bit:Somador1bit    ; Somador_1bit              ; work         ;
-;          |muxGenerico4x1:MUX_ULA|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit3|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1            ; work         ;
+;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit3|muxGenerico2x1:muxInverteB  ; muxGenerico2x1            ; work         ;
+;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit3|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1            ; work         ;
 ;       |ULA_1bit:Bit4|                 ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit4                             ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit4|Somador_1bit:Somador1bit    ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit4|muxGenerico2x1:muxInverteB  ; muxGenerico2x1            ; work         ;
@@ -407,17 +406,16 @@ https://fpgasoftware.intel.com/eula.
 ;          |Somador_1bit:Somador1bit|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit7|Somador_1bit:Somador1bit    ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit7|muxGenerico2x1:muxInverteB  ; muxGenerico2x1            ; work         ;
 ;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit7|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1            ; work         ;
-;       |ULA_1bit:Bit8|                 ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit8                             ; ULA_1bit                  ; work         ;
+;       |ULA_1bit:Bit8|                 ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit8                             ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit8|Somador_1bit:Somador1bit    ; Somador_1bit              ; work         ;
-;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit8|muxGenerico2x1:muxInverteB  ; muxGenerico2x1            ; work         ;
 ;          |muxGenerico4x1:MUX_ULA|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit8|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1            ; work         ;
 ;       |ULA_1bit:Bit9|                 ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit9                             ; ULA_1bit                  ; work         ;
 ;          |Somador_1bit:Somador1bit|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit9|Somador_1bit:Somador1bit    ; Somador_1bit              ; work         ;
 ;          |muxGenerico2x1:muxInverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit9|muxGenerico2x1:muxInverteB  ; muxGenerico2x1            ; work         ;
 ;          |muxGenerico4x1:MUX_ULA|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit9|muxGenerico4x1:MUX_ULA      ; muxGenerico4x1            ; work         ;
 ;    |UnidadeControleFluxoDados:UC|     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|UnidadeControleFluxoDados:UC                            ; UnidadeControleFluxoDados ; work         ;
-;    |UnidadeControleULA:UC_ULA|        ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|UnidadeControleULA:UC_ULA                               ; UnidadeControleULA        ; work         ;
-;    |bancoReg:banco|                   ; 132 (132)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |top_level|bancoReg:banco                                          ; bancoReg                  ; work         ;
+;    |UnidadeControleULA:UC_ULA|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|UnidadeControleULA:UC_ULA                               ; UnidadeControleULA        ; work         ;
+;    |bancoReg:banco|                   ; 131 (131)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |top_level|bancoReg:banco                                          ; bancoReg                  ; work         ;
 ;    |conversorHex7Seg:Decoder_HEX0|    ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|conversorHex7Seg:Decoder_HEX0                           ; conversorHex7Seg          ; work         ;
 ;    |conversorHex7Seg:Decoder_HEX1|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|conversorHex7Seg:Decoder_HEX1                           ; conversorHex7Seg          ; work         ;
 ;    |conversorHex7Seg:Decoder_HEX2|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|conversorHex7Seg:Decoder_HEX2                           ; conversorHex7Seg          ; work         ;
@@ -432,19 +430,6 @@ https://fpgasoftware.intel.com/eula.
 ;    |somadorGenerico:somador|          ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top_level|somadorGenerico:somador                                 ; somadorGenerico           ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+---------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; UnidadeControleULA:UC_ULA|ULActrl[1]               ; GND                 ; yes                    ;
-; UnidadeControleULA:UC_ULA|ULActrl[2]               ; GND                 ; yes                    ;
-; UnidadeControleULA:UC_ULA|ULActrl[0]               ; GND                 ; yes                    ;
-; Number of user-specified and inferred latches = 3  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +---------------------------------------------------------------------------------------+
@@ -1423,53 +1408,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------+--------------------------------+-----------------------------------------------------------------+
 ; Register name                  ; Reason for Removal             ; Registers Removed due to This Register                          ;
 +--------------------------------+--------------------------------+-----------------------------------------------------------------+
-; bancoReg:banco|registrador~326 ; Stuck at GND                   ; bancoReg:banco|registrador~327, bancoReg:banco|registrador~328, ;
-;                                ; due to stuck port clock_enable ; bancoReg:banco|registrador~329, bancoReg:banco|registrador~330, ;
-;                                ;                                ; bancoReg:banco|registrador~331, bancoReg:banco|registrador~332, ;
-;                                ;                                ; bancoReg:banco|registrador~333, bancoReg:banco|registrador~334, ;
-;                                ;                                ; bancoReg:banco|registrador~335, bancoReg:banco|registrador~336, ;
-;                                ;                                ; bancoReg:banco|registrador~337, bancoReg:banco|registrador~338, ;
-;                                ;                                ; bancoReg:banco|registrador~339, bancoReg:banco|registrador~340, ;
-;                                ;                                ; bancoReg:banco|registrador~341, bancoReg:banco|registrador~342, ;
-;                                ;                                ; bancoReg:banco|registrador~343, bancoReg:banco|registrador~344, ;
-;                                ;                                ; bancoReg:banco|registrador~345, bancoReg:banco|registrador~346, ;
-;                                ;                                ; bancoReg:banco|registrador~347, bancoReg:banco|registrador~348, ;
-;                                ;                                ; bancoReg:banco|registrador~349, bancoReg:banco|registrador~350, ;
-;                                ;                                ; bancoReg:banco|registrador~351, bancoReg:banco|registrador~352, ;
-;                                ;                                ; bancoReg:banco|registrador~353, bancoReg:banco|registrador~354, ;
-;                                ;                                ; bancoReg:banco|registrador~355, bancoReg:banco|registrador~356, ;
-;                                ;                                ; bancoReg:banco|registrador~357, bancoReg:banco|registrador~391, ;
-;                                ;                                ; bancoReg:banco|registrador~359, bancoReg:banco|registrador~392, ;
-;                                ;                                ; bancoReg:banco|registrador~360, bancoReg:banco|registrador~393, ;
-;                                ;                                ; bancoReg:banco|registrador~361, bancoReg:banco|registrador~394, ;
-;                                ;                                ; bancoReg:banco|registrador~362, bancoReg:banco|registrador~395, ;
-;                                ;                                ; bancoReg:banco|registrador~363, bancoReg:banco|registrador~396, ;
-;                                ;                                ; bancoReg:banco|registrador~364, bancoReg:banco|registrador~397, ;
-;                                ;                                ; bancoReg:banco|registrador~365, bancoReg:banco|registrador~398, ;
-;                                ;                                ; bancoReg:banco|registrador~366, bancoReg:banco|registrador~399, ;
-;                                ;                                ; bancoReg:banco|registrador~367, bancoReg:banco|registrador~400, ;
-;                                ;                                ; bancoReg:banco|registrador~368, bancoReg:banco|registrador~401, ;
-;                                ;                                ; bancoReg:banco|registrador~369, bancoReg:banco|registrador~402, ;
-;                                ;                                ; bancoReg:banco|registrador~370, bancoReg:banco|registrador~403, ;
-;                                ;                                ; bancoReg:banco|registrador~371, bancoReg:banco|registrador~404, ;
-;                                ;                                ; bancoReg:banco|registrador~372, bancoReg:banco|registrador~405, ;
-;                                ;                                ; bancoReg:banco|registrador~373, bancoReg:banco|registrador~406, ;
-;                                ;                                ; bancoReg:banco|registrador~374, bancoReg:banco|registrador~407, ;
-;                                ;                                ; bancoReg:banco|registrador~375, bancoReg:banco|registrador~408, ;
-;                                ;                                ; bancoReg:banco|registrador~376, bancoReg:banco|registrador~409, ;
-;                                ;                                ; bancoReg:banco|registrador~377, bancoReg:banco|registrador~410, ;
-;                                ;                                ; bancoReg:banco|registrador~378, bancoReg:banco|registrador~411, ;
-;                                ;                                ; bancoReg:banco|registrador~379, bancoReg:banco|registrador~412, ;
-;                                ;                                ; bancoReg:banco|registrador~380, bancoReg:banco|registrador~413, ;
-;                                ;                                ; bancoReg:banco|registrador~381, bancoReg:banco|registrador~414, ;
-;                                ;                                ; bancoReg:banco|registrador~382, bancoReg:banco|registrador~415, ;
-;                                ;                                ; bancoReg:banco|registrador~383, bancoReg:banco|registrador~416, ;
-;                                ;                                ; bancoReg:banco|registrador~384, bancoReg:banco|registrador~417, ;
-;                                ;                                ; bancoReg:banco|registrador~385, bancoReg:banco|registrador~418, ;
-;                                ;                                ; bancoReg:banco|registrador~386, bancoReg:banco|registrador~419, ;
-;                                ;                                ; bancoReg:banco|registrador~387, bancoReg:banco|registrador~420, ;
-;                                ;                                ; bancoReg:banco|registrador~388, bancoReg:banco|registrador~421, ;
-;                                ;                                ; bancoReg:banco|registrador~389                                  ;
+; bancoReg:banco|registrador~333 ; Stuck at GND                   ; bancoReg:banco|registrador~334, bancoReg:banco|registrador~398, ;
+;                                ; due to stuck port clock_enable ; bancoReg:banco|registrador~366                                  ;
 +--------------------------------+--------------------------------+-----------------------------------------------------------------+
 
 
@@ -1494,11 +1434,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top_level|registradorGenerico:PC|DOUT[22]                                   ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |top_level|registradorGenerico:PC|DOUT[9]                                    ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |top_level|registradorGenerico:PC|DOUT[20]                                   ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |top_level|registradorGenerico:PC|DOUT[3]                                    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|UnidadeControleFluxoDados:UC|saida_controle[4]                    ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit22|muxGenerico2x1:muxInverteB|saida_MUX ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit29|muxGenerico4x1:MUX_ULA|saida_MUX     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|UnidadeControleFluxoDados:UC|saida_controle[2]                    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit14|muxGenerico2x1:muxInverteB|saida_MUX ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_level|ULA_32bit:ULA|ULA_1bit:Bit13|muxGenerico4x1:MUX_ULA|saida_MUX     ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_level|UnidadeControleFluxoDados:UC|saida_controle[5]                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
 
@@ -2040,26 +1980,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 2142                        ;
 ;     ENA               ; 2112                        ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 1322                        ;
+; arriav_lcell_comb     ; 1320                        ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
 ;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
-;     extend            ; 4                           ;
-;         7 data inputs ; 4                           ;
-;     normal            ; 1258                        ;
+;     extend            ; 10                          ;
+;         7 data inputs ; 10                          ;
+;     normal            ; 1250                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 120                         ;
-;         3 data inputs ; 42                          ;
-;         4 data inputs ; 161                         ;
-;         5 data inputs ; 93                          ;
-;         6 data inputs ; 840                         ;
-; boundary_port         ; 67                          ;
+;         2 data inputs ; 119                         ;
+;         3 data inputs ; 90                          ;
+;         4 data inputs ; 144                         ;
+;         5 data inputs ; 43                          ;
+;         6 data inputs ; 852                         ;
+; boundary_port         ; 66                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 6.86                        ;
+; Max LUT depth         ; 18.00                       ;
+; Average LUT depth     ; 6.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2068,7 +2008,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -2078,154 +2018,149 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue May 23 10:56:27 2023
+    Info: Processing started: Tue May 23 17:54:54 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips_A -c mips_A
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/edgeDetector.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/conversorHex7Seg.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ula_32bit.vhd
-    Info (12022): Found design unit 1: ULA_32bit-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_32bit.vhd Line: 15
-    Info (12023): Found entity 1: ULA_32bit File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_32bit.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file ula_1bit.vhd
-    Info (12022): Found design unit 1: ULA_1bit-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_1bit.vhd Line: 17
-    Info (12023): Found entity 1: ULA_1bit File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_1bit.vhd Line: 5
+Info (12021): Found 3 design units, including 1 entities, in source file edgeDetector.vhd
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: /home/lorran/Documentos/MIPS/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: /home/lorran/Documentos/MIPS/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: /home/lorran/Documentos/MIPS/edgeDetector.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file conversorHex7Seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/lorran/Documentos/MIPS/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: /home/lorran/Documentos/MIPS/conversorHex7Seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ULA_32bit.vhd
+    Info (12022): Found design unit 1: ULA_32bit-comportamento File: /home/lorran/Documentos/MIPS/ULA_32bit.vhd Line: 15
+    Info (12023): Found entity 1: ULA_32bit File: /home/lorran/Documentos/MIPS/ULA_32bit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ULA_1bit.vhd
+    Info (12022): Found design unit 1: ULA_1bit-comportamento File: /home/lorran/Documentos/MIPS/ULA_1bit.vhd Line: 17
+    Info (12023): Found entity 1: ULA_1bit File: /home/lorran/Documentos/MIPS/ULA_1bit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file top_level.vhd
-    Info (12022): Found design unit 1: top_level-arquitetura File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 23
-    Info (12023): Found entity 1: top_level File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file somador_1bit.vhd
-    Info (12022): Found design unit 1: Somador_1bit-arquitetura File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/Somador_1bit.vhd Line: 15
-    Info (12023): Found entity 1: Somador_1bit File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/Somador_1bit.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/somaConstante.vhd Line: 19
-    Info (12023): Found entity 1: somaConstante File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/somaConstante.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ROMMIPS.vhd Line: 15
-    Info (12023): Found entity 1: ROMMIPS File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ROMMIPS.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/registradorGenerico.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico4x1.vhd Line: 13
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico4x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico2x1.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file bancoreg.vhd
-    Info (12022): Found design unit 1: bancoReg-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/bancoReg.vhd Line: 30
-    Info (12023): Found entity 1: bancoReg File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/bancoReg.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
-    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 18
-    Info (12023): Found entity 1: RAMMIPS File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrolefluxodados.vhd
-    Info (12022): Found design unit 1: UnidadeControleFluxoDados-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleFluxoDados.vhd Line: 10
-    Info (12023): Found entity 1: UnidadeControleFluxoDados File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleFluxoDados.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file unidadecontroleula.vhd
-    Info (12022): Found design unit 1: UnidadeControleULA-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleULA.vhd Line: 11
-    Info (12023): Found entity 1: UnidadeControleULA File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleULA.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
-    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/estendeSinalGenerico.vhd Line: 19
-    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/estendeSinalGenerico.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file somadorgenerico.vhd
-    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/somadorGenerico.vhd Line: 18
-    Info (12023): Found entity 1: somadorGenerico File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/somadorGenerico.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_32bit.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_32bit-comportamento File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico2x1_32bit.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1_32bit File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/muxGenerico2x1_32bit.vhd Line: 4
+    Info (12022): Found design unit 1: top_level-arquitetura File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 22
+    Info (12023): Found entity 1: top_level File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file Somador_1bit.vhd
+    Info (12022): Found design unit 1: Somador_1bit-arquitetura File: /home/lorran/Documentos/MIPS/Somador_1bit.vhd Line: 15
+    Info (12023): Found entity 1: Somador_1bit File: /home/lorran/Documentos/MIPS/Somador_1bit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file somaConstante.vhd
+    Info (12022): Found design unit 1: somaConstante-comportamento File: /home/lorran/Documentos/MIPS/somaConstante.vhd Line: 19
+    Info (12023): Found entity 1: somaConstante File: /home/lorran/Documentos/MIPS/somaConstante.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file ROMMIPS.vhd
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: /home/lorran/Documentos/MIPS/ROMMIPS.vhd Line: 15
+    Info (12023): Found entity 1: ROMMIPS File: /home/lorran/Documentos/MIPS/ROMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registradorGenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: /home/lorran/Documentos/MIPS/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: /home/lorran/Documentos/MIPS/registradorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico4x1.vhd
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: /home/lorran/Documentos/MIPS/muxGenerico4x1.vhd Line: 13
+    Info (12023): Found entity 1: muxGenerico4x1 File: /home/lorran/Documentos/MIPS/muxGenerico4x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico2x1.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: /home/lorran/Documentos/MIPS/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: /home/lorran/Documentos/MIPS/muxGenerico2x1.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file bancoReg.vhd
+    Info (12022): Found design unit 1: bancoReg-comportamento File: /home/lorran/Documentos/MIPS/bancoReg.vhd Line: 30
+    Info (12023): Found entity 1: bancoReg File: /home/lorran/Documentos/MIPS/bancoReg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file RAMMIPS.vhd
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 18
+    Info (12023): Found entity 1: RAMMIPS File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file UnidadeControleFluxoDados.vhd
+    Info (12022): Found design unit 1: UnidadeControleFluxoDados-comportamento File: /home/lorran/Documentos/MIPS/UnidadeControleFluxoDados.vhd Line: 10
+    Info (12023): Found entity 1: UnidadeControleFluxoDados File: /home/lorran/Documentos/MIPS/UnidadeControleFluxoDados.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file UnidadeControleULA.vhd
+    Info (12022): Found design unit 1: UnidadeControleULA-comportamento File: /home/lorran/Documentos/MIPS/UnidadeControleULA.vhd Line: 11
+    Info (12023): Found entity 1: UnidadeControleULA File: /home/lorran/Documentos/MIPS/UnidadeControleULA.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file estendeSinalGenerico.vhd
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: /home/lorran/Documentos/MIPS/estendeSinalGenerico.vhd Line: 19
+    Info (12023): Found entity 1: estendeSinalGenerico File: /home/lorran/Documentos/MIPS/estendeSinalGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file somadorGenerico.vhd
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: /home/lorran/Documentos/MIPS/somadorGenerico.vhd Line: 18
+    Info (12023): Found entity 1: somadorGenerico File: /home/lorran/Documentos/MIPS/somadorGenerico.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico2x1_32bit.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1_32bit-comportamento File: /home/lorran/Documentos/MIPS/muxGenerico2x1_32bit.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1_32bit File: /home/lorran/Documentos/MIPS/muxGenerico2x1_32bit.vhd Line: 4
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at top_level.vhd(12) File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 12
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 63
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 67
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 71
-Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 75
-Info (12128): Elaborating entity "UnidadeControleFluxoDados" for hierarchy "UnidadeControleFluxoDados:UC" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 80
-Info (12128): Elaborating entity "UnidadeControleULA" for hierarchy "UnidadeControleULA:UC_ULA" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 84
-Info (10041): Inferred latch for "ULActrl[0]" at UnidadeControleULA.vhd(26) File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleULA.vhd Line: 26
-Info (10041): Inferred latch for "ULActrl[1]" at UnidadeControleULA.vhd(26) File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleULA.vhd Line: 26
-Info (10041): Inferred latch for "ULActrl[2]" at UnidadeControleULA.vhd(26) File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/UnidadeControleULA.vhd Line: 26
-Info (12128): Elaborating entity "muxGenerico2x1_32bit" for hierarchy "muxGenerico2x1_32bit:muxRT_RD" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 88
-Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:banco" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 95
-Info (12128): Elaborating entity "muxGenerico2x1_32bit" for hierarchy "muxGenerico2x1_32bit:muxULA_mem" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 101
-Info (12128): Elaborating entity "ULA_32bit" for hierarchy "ULA_32bit:ULA" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 120
-Info (12128): Elaborating entity "ULA_1bit" for hierarchy "ULA_32bit:ULA|ULA_1bit:Bit0" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_32bit.vhd Line: 56
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "ULA_32bit:ULA|ULA_1bit:Bit0|muxGenerico2x1:muxInverteB" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_1bit.vhd Line: 28
-Info (12128): Elaborating entity "Somador_1bit" for hierarchy "ULA_32bit:ULA|ULA_1bit:Bit0|Somador_1bit:Somador1bit" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_1bit.vhd Line: 38
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_32bit:ULA|ULA_1bit:Bit0|muxGenerico4x1:MUX_ULA" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ULA_1bit.vhd Line: 49
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:estendeSinal" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 125
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:somador" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 129
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:Decoder_HEX0" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 136
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at top_level.vhd(11) File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 11
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 60
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 64
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 68
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/lorran/Documentos/MIPS/ROMMIPS.vhd Line: 18
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 72
+Info (12128): Elaborating entity "UnidadeControleFluxoDados" for hierarchy "UnidadeControleFluxoDados:UC" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 77
+Info (12128): Elaborating entity "UnidadeControleULA" for hierarchy "UnidadeControleULA:UC_ULA" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 81
+Info (12128): Elaborating entity "muxGenerico2x1_32bit" for hierarchy "muxGenerico2x1_32bit:muxRT_RD" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 85
+Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:banco" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 92
+Info (12128): Elaborating entity "muxGenerico2x1_32bit" for hierarchy "muxGenerico2x1_32bit:muxULA_mem" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 98
+Info (12128): Elaborating entity "ULA_32bit" for hierarchy "ULA_32bit:ULA" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 117
+Info (12128): Elaborating entity "ULA_1bit" for hierarchy "ULA_32bit:ULA|ULA_1bit:Bit0" File: /home/lorran/Documentos/MIPS/ULA_32bit.vhd Line: 56
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "ULA_32bit:ULA|ULA_1bit:Bit0|muxGenerico2x1:muxInverteB" File: /home/lorran/Documentos/MIPS/ULA_1bit.vhd Line: 28
+Info (12128): Elaborating entity "Somador_1bit" for hierarchy "ULA_32bit:ULA|ULA_1bit:Bit0|Somador_1bit:Somador1bit" File: /home/lorran/Documentos/MIPS/ULA_1bit.vhd Line: 38
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA_32bit:ULA|ULA_1bit:Bit0|muxGenerico4x1:MUX_ULA" File: /home/lorran/Documentos/MIPS/ULA_1bit.vhd Line: 49
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:estendeSinal" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 122
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:somador" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 126
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:Decoder_HEX0" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 133
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276007): RAM logic "bancoReg:banco|registrador" is uninferred due to asynchronous read logic File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/bancoReg.vhd Line: 49
-    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 21
-    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/ROMMIPS.vhd Line: 18
+    Info (276007): RAM logic "bancoReg:banco|registrador" is uninferred due to asynchronous read logic File: /home/lorran/Documentos/MIPS/bancoReg.vhd Line: 49
+    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 21
+    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: /home/lorran/Documentos/MIPS/ROMMIPS.vhd Line: 18
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[10]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[9]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[8]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[7]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[6]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[5]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[4]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[3]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[2]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[1]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[0]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[13]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[14]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[15]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[16]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[17]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[18]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[19]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[20]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[21]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[22]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[23]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[24]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[25]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[26]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[27]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[28]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[29]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[30]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[10]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[9]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[8]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[7]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[6]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[5]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[4]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[3]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[2]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[1]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[0]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[13]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[14]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[15]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[16]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[17]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[18]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[19]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[20]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[21]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[22]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[23]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[24]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[25]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[26]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[27]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[28]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[29]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[30]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: /home/lorran/Documentos/MIPS/RAMMIPS.vhd Line: 13
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 12
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 12
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 11
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 9
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 10
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 10
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 10
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/lidia/6 SEM/mips_intermediario/MIPS/top_level.vhd Line: 11
-Info (21057): Implemented 3499 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 15 input pins
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 9
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 9
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/lorran/Documentos/MIPS/top_level.vhd Line: 10
+Info (21057): Implemented 3496 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 3432 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 4861 megabytes
-    Info: Processing ended: Tue May 23 10:56:48 2023
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:24
+    Info (21061): Implemented 3430 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
+    Info: Peak virtual memory: 505 megabytes
+    Info: Processing ended: Tue May 23 17:55:09 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:29
 
 

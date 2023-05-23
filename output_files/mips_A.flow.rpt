@@ -1,5 +1,5 @@
 Flow report for mips_A
-Tue May 23 10:58:54 2023
+Tue May 23 17:56:30 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue May 23 10:58:39 2023       ;
+; Flow Status                     ; Successful - Tue May 23 17:56:20 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; mips_A                                      ;
 ; Top-level Entity Name           ; top_level                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1,272 / 18,480 ( 7 % )                      ;
-; Total registers                 ; 2159                                        ;
-; Total pins                      ; 67 / 224 ( 30 % )                           ;
+; Logic utilization (in ALMs)     ; 1,253 / 18,480 ( 7 % )                      ;
+; Total registers                 ; 2152                                        ;
+; Total pins                      ; 66 / 224 ( 29 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/23/2023 10:56:28 ;
+; Start date & time ; 05/23/2023 17:54:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mips_A              ;
 +-------------------+---------------------+
@@ -79,9 +79,10 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 110073161799278.168485018804808        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 154784202761142.168487529449922        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; top_level   ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; top_level   ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; top_level   ; Top        ;
@@ -99,24 +100,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4861 MB             ; 00:00:24                           ;
-; Fitter               ; 00:01:38     ; 1.2                     ; 6293 MB             ; 00:01:50                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 4845 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:14     ; 2.0                     ; 5131 MB             ; 00:00:18                           ;
-; Total                ; 00:02:21     ; --                      ; --                  ; 00:02:36                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 503 MB              ; 00:00:28                           ;
+; Fitter               ; 00:01:04     ; 1.2                     ; 1620 MB             ; 00:02:18                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 505 MB              ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:09     ; 2.3                     ; 808 MB              ; 00:00:19                           ;
+; Total                ; 00:01:32     ; --                      ; --                  ; 00:03:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-KK7SUOB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-KK7SUOB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-KK7SUOB  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-KK7SUOB  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++----------------------+---------------------+--------------+------------+----------------+
+; Module Name          ; Machine Hostname    ; OS Name      ; OS Version ; Processor type ;
++----------------------+---------------------+--------------+------------+----------------+
+; Analysis & Synthesis ; lorran-ThinkPad-E14 ; Ubuntu 22.10 ; 22         ; x86_64         ;
+; Fitter               ; lorran-ThinkPad-E14 ; Ubuntu 22.10 ; 22         ; x86_64         ;
+; Assembler            ; lorran-ThinkPad-E14 ; Ubuntu 22.10 ; 22         ; x86_64         ;
+; Timing Analyzer      ; lorran-ThinkPad-E14 ; Ubuntu 22.10 ; 22         ; x86_64         ;
++----------------------+---------------------+--------------+------------+----------------+
 
 
 ------------
