@@ -17,7 +17,8 @@ architecture comportamento of UnidadeControleFluxoDados is
   
   constant R      : std_logic_vector(5 downto 0) := "000000";
 
-  begin           -- mux mux hab mux ula  mux beq rd wr  
+  begin 
+    -- mux[PC+4, BEQ]/JMP | muxRT/RD | habEscRegULA | muxRT/Im | ULAOP | muxULA/mem | BEQ | RD | WR  
 	saida_controle <= "0110000000" when (opcode = R)     else
 							"0011011010" when (opcode = LW)    else
 							"0001100001" when (opcode = SW)    else
