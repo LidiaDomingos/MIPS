@@ -16,13 +16,13 @@ architecture comportamento of UnidadeControleULA is
   constant OP_OR  : std_logic_vector(5 downto 0) := "100101";
   constant SLT    : std_logic_vector(5 downto 0) := "101010";
   
-  constant R: std_logic_vector(1 downto 0) := "00";
-  constant LW    : std_logic_vector(1 downto 0) := "01";
-  constant SW    : std_logic_vector(1 downto 0) := "10";
-  constant BEQ   : std_logic_vector(1 downto 0) := "11";
+  constant R      : std_logic_vector(1 downto 0) := "00";
+  constant LW     : std_logic_vector(1 downto 0) := "01";
+  constant SW     : std_logic_vector(1 downto 0) := "10";
+  constant BEQ    : std_logic_vector(1 downto 0) := "11";
     
   begin
-  
+         -- inverteB  
 ULActrl <= "000" when (funct = OP_AND and ULAop = R) else
            "001" when (funct = OP_OR  and ULAop = R) else
 			  "010" when (funct = SOMA   and ULAop = R) else
