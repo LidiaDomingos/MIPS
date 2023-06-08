@@ -19,6 +19,6 @@ end entity;
 architecture comportamento of estendeSinalComZeros is
 begin
 
-    estendeSinal_OUT <= estendeSinal_IN & "0000000000000000";
+    estendeSinal_OUT <= estendeSinal_IN & (larguraDadoSaida - larguraDadoEntrada -1 downto 0 => '0');
 
 end architecture;
