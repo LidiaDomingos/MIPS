@@ -24,10 +24,11 @@ architecture arquitetura of top_level is
 ---------------------------------------------------------
   signal CLK    : std_logic;
   signal proxPC : std_logic_vector (31 downto 0);
+  signal saidaMUXLeft : std_logic_vector (31 downto 0);
   signal	PC_out : std_logic_vector (31 downto 0);
   signal Endereco : std_logic_vector (31 downto 0);
   signal saida_RAM_lido: std_logic_vector(31 downto 0);
-  signal saida_controle: std_logic_vector(9 downto 0);
+  signal saida_controle: std_logic_vector(13 downto 0);
   signal saida_controle_ULA: std_logic_vector(2 downto 0);
   signal saida_end3: std_logic_vector(4 downto 0);
   signal saida_end_escrita3: std_logic_vector(31 downto 0);
@@ -38,6 +39,7 @@ architecture arquitetura of top_level is
   signal saida_mux_right: std_logic_vector(31 downto 0);
   signal pc_shift_2: std_logic_vector(31 downto 0);
   signal Z: std_logic;
+  signal saida_MUX_Z_NOT_Z: std_logic;
   signal sinalEstendido: std_logic_vector(31 downto 0);
   signal saida_mux_top: std_logic_vector(31 downto 0);
   signal pc_shift: std_logic_vector(25 downto 0);
@@ -46,9 +48,27 @@ architecture arquitetura of top_level is
   signal saida_ULA : std_logic_vector (31 downto 0);
   signal entradaA_ULA : std_logic_vector (31 downto 0);
   signal entradaB_ULA : std_logic_vector (31 downto 0);
+  
+  signal sinalEstendidoLUI: std_logic_vector(31 downto 0);
+  
+  signal entrada_seletor_mux_right : std_logic;
+  
+  -- ALIAS PARA FACILITAR OS PONTOS DE CONTROLE
+  alias JR: std_logic is saida_controle(13);
+  alias MUX_PC_4_BEQ_JMP: std_logic is saida_controle(12);
+  alias MUX_RT_RD: std_logic_vector is saida_controle(11 downto 10);
+  alias ORI_AND_ESTENDE_SINAL: std_logic is saida_controle(9);
+  alias HABILITA_ESCRITA_REG: std_logic is saida_controle(8);
+  alias MUX_RT_IMEDIATO: std_logic is saida_controle(7);
+  alias TIPO_R: std_logic is saida_controle(6);
+  alias MUX_ULA_MEM: std_logic_vector is saida_controle(5 downto 4);
+  alias BEQ: std_logic is saida_controle(3);
+  alias BNE: std_logic is saida_controle(2);
+  alias HABILITA_LEITURA_MEM: std_logic is saida_controle(1);
+  alias HABILITA_ESCRITA_MEM: std_logic is saida_controle(0);
+
 
 begin
-
 -- Instanciando os componentes:
 
 CLK <= KEY(0);
@@ -68,57 +88,78 @@ ROM :  entity work.ROMMIPS
 -- Memória RAM que recebe o resultado da ULA, tem como dado de escrita o dado lido do reg2 do banco, e dado de saída o dado lido do endereço, e as flags de leitura e escrita. 
 RAM : entity work.RAMMIPS
 		  port map(clk => CLK, Endereco => saida_ULA, Dado_in => entrada_MUX_A, Dado_out => saida_RAM_lido, 
-		  we => saida_controle(0), re => saida_controle(1), habilita => '1');
+		  we => HABILITA_ESCRITA_MEM, re => HABILITA_LEITURA_MEM, habilita => '1');
 		  
 -- A unidade de controle recebe o opcode da instrução vinda da ROM e retornas os pontos de controle.
 UC  : entity work.UnidadeControleFluxoDados
-		  port map(opcode => saida_ROM(31 downto 26), saida_controle => saida_controle);
+		  port map(opcode => saida_ROM(31 downto 26), funct => saida_ROM(5 downto 0), saida_controle => saida_controle);
 
 -- Unidade de controle da ULA tem como operação o que vem da unidade de controle, o funct da ROM e retorna os pontos de controle da ULA.
 UC_ULA: entity work.UnidadeControleULA
-		  port map(ULAop => saida_controle(5 downto 4), funct => saida_ROM(5 downto 0), ULActrl => saida_controle_ULA);
+		  port map(TipoR => TIPO_R, funct => saida_ROM(5 downto 0), opCode => saida_ROM(31 downto 26), ULActrl => saida_controle_ULA); -- adicionado opCode e mudou OpULA para Tipo R
 
 -- Mux que escolhe o valor que vai para a entrada B da ULA, ou seja, se vai o dado lido do banco ou se vai o valor recebido na instrução em 32 bits, tal escolha é feita pelo ponto de controle.
-muxRT_RD : entity work.muxGenerico2x1_32bit generic map(larguraDados => 5) 
+muxRT_RD : entity work.muxGenerico4x2_32bit generic map(larguraDados => 5) 
         port map( entradaA_MUX => saida_ROM(20 downto 16),
                  entradaB_MUX =>  saida_ROM(15 downto 11),
-                 seletor_MUX => saida_controle(8),
+					  entradaC_MUX => 5x"1F",
+					  entradaD_MUX => 5x"00",
+                 seletor_MUX => MUX_RT_RD, -- atualizado
                  saida_MUX => saida_end3);
 
 -- O banco recebe os endereços dos registradores a serem utilizados, além de receber também o dado que vem do MUX que escolhe entre dado da RAM e o que sai do PC, a escrita é controlada pelo ponto de controle que vem da ULA, tendo duas saídas
 -- uma que vai para a entrada A da ULA e outra que vai para a entrada A do mux que controla o que vai para a entrada B da ULA.
 banco :  entity work.bancoReg  generic map (larguraDados => 32, larguraEndBancoRegs => 5)
         port map( clk => CLK, enderecoA => saida_ROM(25 downto 21), enderecoB => saida_ROM(20 downto 16), 
-		  enderecoC => saida_end3, dadoEscritaC => saida_end_escrita3, escreveC => saida_controle(7),
+		  enderecoC => saida_end3, dadoEscritaC => saida_end_escrita3, escreveC => HABILITA_ESCRITA_REG,
 		  saidaA => entradaA_ULA , saidaB => entrada_MUX_A);
 		
 -- MUX que controla o que vai para o banco, e escolhe entre o endereço do PC e o dado lido da RAM, e a escolha é feita pelo ponto de controle da UC.
-muxULA_mem : entity work.muxGenerico2x1_32bit 
+muxULA_mem : entity work.muxGenerico4x2_32bit 
         port map(entradaA_MUX => saida_ULA,
                  entradaB_MUX =>  saida_RAM_lido,
-                 seletor_MUX => saida_controle(3),
+					  entradaC_MUX =>  PC_out,          -- Novo!
+					  entradaD_MUX => sinalEstendidoLUI,-- Novo!
+                 seletor_MUX => MUX_ULA_MEM,  -- atualizado
                  saida_MUX => saida_end_escrita3);
 					  
 -- MUX que controla o que vai para a ULA, escolhe entre o sinal estendido e a saída 2 do banco, a escolha é feita pelo ponto de controle da UC.
 muxULA_entrada : entity work.muxGenerico2x1_32bit
-		  port map(entradaA_MUX => entrada_MUX_A, entradaB_MUX => sinalEstendido, seletor_MUX => saida_controle(6), saida_MUX => entradaB_ULA);
+		  port map(entradaA_MUX => entrada_MUX_A, entradaB_MUX => sinalEstendido, seletor_MUX => MUX_RT_IMEDIATO, saida_MUX => entradaB_ULA);
 
 -- Escolhe o que vai para o MUX_LEFT, que define o que vai para o PC. Recebe o que sai do incrementaPC e o sinal estendido shiftado. É controlado pela flag out Z da ula e o ponto de controle BEQ.
 mux_right : entity work.muxGenerico2x1_32bit
 			port map(entradaA_MUX => PC_out, entradaB_MUX => sinalExtImediato, seletor_MUX => seletor_mux_right, saida_MUX => saida_mux_right);
 			
--- Define o que vai para o PC, se é o endereço que vem do mux_right ou o endereço shiftado que vem da ROM.
+-- Define o que vai para o mux ProxPC entrada , se é o endereço que vem do mux_right ou o endereço shiftado que vem da ROM.
 mux_left : entity work.muxGenerico2x1_32bit
-			port map(entradaA_MUX => saida_mux_right, entradaB_MUX => pc_shift_2, seletor_MUX => saida_controle(9), saida_MUX => proxPC);
+			port map(entradaA_MUX => saida_mux_right, entradaB_MUX => pc_shift_2, seletor_MUX => MUX_PC_4_BEQ_JMP, saida_MUX => saidaMUXLeft);
+			
+
+-- Define o que vai para o PC
+mux_ProxPC : entity work.muxGenerico2x1_32bit
+			port map(entradaA_MUX => saidaMUXLeft, entradaB_MUX => entradaA_ULA, seletor_MUX => JR, saida_MUX => proxPC);
+			
+			
 					  
 -- Faz as operações que a instrução pede, controlada pela unidade de controle e o banco de registradores.
 ULA : entity work.ULA_32bit
           port map (A => entradaA_ULA, B => entradaB_ULA, seletor => saida_controle_ULA(1 downto 0), inverteB => saida_controle_ULA(2),
 			 F_Out => Z,saida => saida_ULA);
 
+MUX_Z_NOT_Z : entity work.muxGenerico2x1
+			port map (entradaA_MUX =>  NOT(Z), entradaB_MUX => Z, seletor_MUX => BEQ, saida_MUX => saida_MUX_Z_NOT_Z);
+			  
+			 
 -- Pelo fato da instrução só vim com 16 bits de imediato, é necessário transformar ele em 32bits para funcionamento.
 estendeSinal: entity work.estendeSinalGenerico
-				  port map(estendeSinal_IN => saida_ROM(15 downto 0), estendeSinal_OUT => sinalEstendido);
+				  port map(estendeSinal_IN => saida_ROM(15 downto 0), ori_and => ORI_AND_ESTENDE_SINAL, estendeSinal_OUT => sinalEstendido); -- adicionado ponto de crtl 
+				  
+				  
+-- Estender o sinal para a instruçao LUI, j´a que so vem 16 bits do imediato e precisamos de 32
+estendeSinalLUI: entity work.estendeSinalComZeros
+				   port map(estendeSinal_IN => saida_ROM(15 downto 0), estendeSinal_OUT => sinalEstendidoLUI); -- a saida ira para a entrada 3 do mux(ULA/mem)
+					
 
 -- Faz a soma do endereço da próxima instrução com o sinal shiftado que vem da instrução.
 somador : entity work.somadorGenerico 
@@ -150,8 +191,11 @@ Decoder_HEX5 :  entity work.conversorHex7Seg
 -- Faz o shift do sinal. 				  
 sinalEstendidoShift <= sinalEstendido(29 downto 0) & "00";
 
+-- Porta OR entre BEQ e BNE para a Porta AND mux right 
+entrada_seletor_mux_right <= BEQ OR BNE;
+
 -- Porta AND que controla o mux right.
-seletor_mux_right <= Z and saida_controle(2);
+seletor_mux_right <= saida_MUX_Z_NOT_Z and entrada_seletor_mux_right;
 
 -- Faz o shift do sinal. 				  
 pc_shift <= saida_ROM(23 downto 0) & "00";
@@ -162,5 +206,7 @@ pc_shift_2 <= PC_out(31 downto 28) & pc_shift & "00";
 -- Escreve nos LED's
 LEDR(3 downto 0) <= saida_mux_top(27 downto 24);
 LEDR(7 downto 4) <= saida_mux_top(31 downto 28);
+LEDR(8) <= Z;
+LEDR(9) <= NOT(Z);
 
 end architecture;
