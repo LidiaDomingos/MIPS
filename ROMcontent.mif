@@ -1,4 +1,3 @@
--- esse AQUIII
 -- Copyright (C) 2017  Intel Corporation. All rights reserved.
 -- Your use of Intel Corporation's design tools, logic functions
 -- and other software and tools, and its AMPP partner logic
@@ -50,4 +49,3 @@ CONTENT BEGIN
     17   :   08000000; --j 0x000000          (pc := #0)
     31   :   03E00008; --jr $ra              (pc := #17)
 END;
-

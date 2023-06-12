@@ -2,56 +2,58 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity UnidadeControleULA is
-  port ( TipoR   : in  std_logic;    -- Mudou. Precisa verificar o funcionamento 
-			opCode   : in  std_logic_vector(5 downto 0);   -- NOVO. Precisa ver o funcionamento com esse novo input!
-			funct   : in  std_logic_vector(5 downto 0);
-         ULActrl : out std_logic_vector(2 downto 0)
-  );
+    generic
+    (
+        larguraDados : natural := 32
+    );
+    port
+    (
+		  TipoR     : in std_logic;
+		  opcode    : in std_logic_vector(5 downto 0);
+		  funct     : in std_logic_vector(5 downto 0);
+		  ULActrl   : out std_logic_vector(3 downto 0)
+    );
 end entity;
 
 architecture comportamento of UnidadeControleULA is
+	 
+	 -- Opcodes
+	 
+	 constant LW      : std_logic_vector(5 downto 0) :=  "100011"; -- hex "23"
+	 constant SW      : std_logic_vector(5 downto 0) :=  "101011"; -- hex "2b"
+	 constant ORI     : std_logic_vector(5 downto 0) :=  "001101"; -- hex "0d"
+	 constant ANDI    : std_logic_vector(5 downto 0) :=  "001100"; -- hex "0c"
+	 constant BEQ     : std_logic_vector(5 downto 0) :=  "000100"; -- hex "04"
+	 constant BNE     : std_logic_vector(5 downto 0) :=  "000101"; -- hex "05"
+	 constant JMP     : std_logic_vector(5 downto 0) :=  "000010"; -- hex "02"
+	 constant JAL     : std_logic_vector(5 downto 0) :=  "000011"; -- hex "03"
+	 constant ADDI    : std_logic_vector(5 downto 0) :=  "001000"; -- hex "08"
+	 constant SLTI    : std_logic_vector(5 downto 0) :=  "001010"; -- hex "0a"
+	 
+	 -- Funct Tipo R
+	 constant ADD     : std_logic_vector(5 downto 0) :=  "100000"; -- hex "20"
+	 constant SUB     : std_logic_vector(5 downto 0) :=  "100010"; -- hex "22"
+	 constant op_AND  : std_logic_vector(5 downto 0) :=  "100100"; -- hex "24"
+	 constant op_OR   : std_logic_vector(5 downto 0) :=  "100101"; -- hex "25"
+	 constant op_SLT  : std_logic_vector(5 downto 0) :=  "101010"; -- hex "2a"
+	 
+	 begin
+	    
+				  --  inverteA  |  inverteB  | selMux
+		ULActrl <=     '0'     &    '0'    &  "10" when (funct = ADD and TipoR = '1') else
+							'0'     &    '1'    &  "10" when (funct = SUB and TipoR = '1') else
+							'0'     &    '0'    &  "00" when (funct= op_AND and TipoR = '1') else
+							'0'     &    '0'    &  "01" when (funct= op_OR  and TipoR = '1') else
+							'0'     &    '1'    &  "11" when (funct = op_SLT and TipoR = '1') else 
+							
+							'0'     &    '1'    &  "11" when (opcode = SLTI and TipoR = '0') else 
+							'0'     &    '0'    &  "10" when (opcode = LW and TipoR = '0') else
+							'0'     &    '0'    &  "10" when (opcode = SW and TipoR = '0') else
+							'0'     &    '0'    &  "01" when (opcode = ORI and TipoR = '0') else
+							'0'     &    '0'    &  "00" when (opcode = ANDI and TipoR = '0') else
+							'0'     &    '0'    &  "10" when (opcode = ADDI and TipoR = '0') else
+							'0'     &    '1'    &  "10" when (opcode = BEQ and TipoR = '0') else
+							'0'     &    '1'    &  "10" when (opcode = BNE  and TipoR = '0') else
+							'0'     &    '1'    &  "10"; -- (opcode = JMP or JR or JAL) 
 
-  constant SOMA   : std_logic_vector(5 downto 0) := "100000";
-  constant SUB    : std_logic_vector(5 downto 0) := "100010";
-  constant OP_AND : std_logic_vector(5 downto 0) := "100100";
-  constant OP_OR  : std_logic_vector(5 downto 0) := "100101";
-  constant SLT    : std_logic_vector(5 downto 0) := "101010";
-  
-  constant LW     : std_logic_vector(5 downto 0) := "100011";
-  constant SW     : std_logic_vector(5 downto 0) := "101011";
-  constant BEQ    : std_logic_vector(5 downto 0) := "000100";
-  constant ORI    : std_logic_vector(5 downto 0) := "001101";-- D hex
-  constant ADDI   : std_logic_vector(5 downto 0) := "001000";-- 8 hex 
-  constant ANDI   : std_logic_vector(5 downto 0) := "001100";-- C hex
-  constant SLTI   : std_logic_vector(5 downto 0) := "001010";-- 10 hex
-  
-  signal opcode_funct: std_logic_vector(5 downto 0);
-
-  begin
-  
-    opcode_funct <= funct when TipoR = '1' else opcode;
-
-    ULActrl(0) <= '1' when(opcode_funct = OP_OR 
-								or opcode_funct = SLT
-								or opcode_funct = SLTI
-								or opcode_funct = ORI) else 
-						'0' ;
-						
-    ULActrl(1) <= '1' when(opcode_funct = LW  
-								or opcode_funct = SW 
-								or opcode_funct = BEQ 
-								or opcode_funct = SOMA 
-								or opcode_funct = ADDI 
-								or opcode_funct = SLTI 
-								or opcode_funct = SUB 
-								or opcode_funct = SLT) else 
-						'0' ;
-						
-    ULActrl(2) <= '1' when(opcode_funct = BEQ 
-								or opcode_funct = SLTI
-								or opcode_funct = SUB
-								or opcode_funct = SLT) else
-						'0' ;
-  
-  
 end architecture;
