@@ -264,6 +264,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9]
 #====================================================================
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name VHDL_FILE ULA31bit.vhd
 set_global_assignment -name VHDL_FILE muxGenerico4x2_32bit.vhd
 set_global_assignment -name VHDL_FILE edgeDetector.vhd
 set_global_assignment -name VHDL_FILE conversorHex7Seg.vhd

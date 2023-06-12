@@ -36,6 +36,7 @@ architecture comportamento of UnidadeControleULA is
 	 constant op_AND  : std_logic_vector(5 downto 0) :=  "100100"; -- hex "24"
 	 constant op_OR   : std_logic_vector(5 downto 0) :=  "100101"; -- hex "25"
 	 constant op_SLT  : std_logic_vector(5 downto 0) :=  "101010"; -- hex "2a"
+	 constant op_NOR  : std_logic_vector(5 downto 0) :=  "100111"; -- hex "27" -- Extra 1
 	 
 	 begin
 	    
@@ -45,6 +46,7 @@ architecture comportamento of UnidadeControleULA is
 							'0'     &    '0'    &  "00" when (funct= op_AND and TipoR = '1') else
 							'0'     &    '0'    &  "01" when (funct= op_OR  and TipoR = '1') else
 							'0'     &    '1'    &  "11" when (funct = op_SLT and TipoR = '1') else 
+							'1'     &    '1'    &  "00" when (funct = op_NOR and TipoR = '1') else -- Extra 1
 							
 							'0'     &    '1'    &  "11" when (opcode = SLTI and TipoR = '0') else 
 							'0'     &    '0'    &  "10" when (opcode = LW and TipoR = '0') else
