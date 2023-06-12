@@ -27,7 +27,10 @@ CONTENT BEGIN
       -- $t5  (#13) := 0x16
 
     -- teste nor (nor) 
-    0    :   014C4027; --nor $t0 $t2 $t4     ($t0 := 0xFFFFFFF0)
-    [1..63]  : 00000000;
+    0    :   014C4027; -- nor $t0 $t2 $t4     ($t0 := 0xFFFFFFF0)
+    -- teste Set Less Than Immediate Unsigned (ltiu) OK
+    1    :   2DA8FFFF; -- sltiu $t0 $t5 0xFFFF   ($t0 := 0x00000001)
+    2    :   2DA8000F; -- sltiu $t0 $t5 0x000F   ($t0 := 0x00000000)
+    [3..63]  : 00000000;
 
 END;

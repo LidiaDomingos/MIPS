@@ -29,6 +29,7 @@ architecture comportamento of UnidadeControleULA is
 	 constant JAL     : std_logic_vector(5 downto 0) :=  "000011"; -- hex "03"
 	 constant ADDI    : std_logic_vector(5 downto 0) :=  "001000"; -- hex "08"
 	 constant SLTI    : std_logic_vector(5 downto 0) :=  "001010"; -- hex "0a"
+	 constant SLTIU   : std_logic_vector(5 downto 0) :=  "001011"; -- hex "0b"
 	 
 	 -- Funct Tipo R
 	 constant ADD     : std_logic_vector(5 downto 0) :=  "100000"; -- hex "20"
@@ -49,6 +50,7 @@ architecture comportamento of UnidadeControleULA is
 							'1'     &    '1'    &  "00" when (funct = op_NOR and TipoR = '1') else -- Extra 1
 							
 							'0'     &    '1'    &  "11" when (opcode = SLTI and TipoR = '0') else 
+							'0'     &    '1'    &  "11" when (opcode = SLTIU and TipoR = '0') else  --Extra
 							'0'     &    '0'    &  "10" when (opcode = LW and TipoR = '0') else
 							'0'     &    '0'    &  "10" when (opcode = SW and TipoR = '0') else
 							'0'     &    '0'    &  "01" when (opcode = ORI and TipoR = '0') else
